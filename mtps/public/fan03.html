@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Game Layout with Vertical Menu</title>
+      <link rel="stylesheet" href="styles03.css">
+   
+</head>
+<body>
+    <header>
+        <div class="user-info">
+            <img id="user-avatar" src="default-avatar.png" alt="User Avatar">
+            <span id="user-name">User Name</span>
+        </div>
+    </header>
+    <div class="container" id="apli01">
+        <table>
+            <tr>
+                <td><img src="img/n1.png" alt="Diom Icon"><span id="diom-counter">0</span></td>
+                <td><img src="img/n4.png" alt="Coin Icon"><span id="coin-counter">0</span></td>
+            </tr>
+        </table>
+    </div>
+    <div class="container" id="apli02">
+        <div class="menu">
+            <div class="menu-item" onclick="toggleEvent('event1')">Сегодня</div>
+            <div class="menu-item" onclick="toggleEvent('event2')">Завтра</div>
+        </div>
+        <div class="event-content" id="event1">
+
+         <div class="special-item">
+            <div class="image"></div>
+            <div class="text">Выполняй суточные задания и заберай свой приз</div>
+        </div>
+
+             <div class="event-item" id="event1" onclick="handleEventClick('event1')">
+
+                <div class="image" style="background-image: url('img/n17.jpg');"></div>
+    <div class="content">
+        <div class="text">Event 1 Description</div>
+        <div class="details">
+            <div class="coin-icon"></div>
+            <div class="amount">100</div>
+        </div>
+    </div>
+    <div class="action-icon"></div>
+</div>
+
+           <div class="event-item" id="event1" onclick="handleEventClick('event1')">
+
+                <div class="image" style="background-image: url('img/n17.jpg');"></div>
+    <div class="content">
+        <div class="text">Event 1 Description</div>
+        <div class="details">
+            <div class="coin-icon"></div>
+            <div class="amount">100</div>
+        </div>
+    </div>
+    <div class="action-icon"></div>
+</div>
+        </div>
+
+        <div class="event-content" id="event2">
+
+           <div class="special-item">
+            <div class="image"></div>
+            <div class="text">Выполни эти не сложные задания и я помогу тебе в добыче монет</div>
+        </div>
+            
+       <div class="event-item" id="event2" onclick="handleEventClick('event2')">
+    <div class="image" style="background-image: url('img/n17.jpg');"></div>
+    <div class="content">
+        <div class="text">Подпешитесь на фейсбук</div>
+        <div class="details">
+            <div class="coin-icon"></div>
+            <div class="amount">200</div>
+        </div>
+    </div>
+    <div class="action-icon"></div>
+</div>
+
+
+       <div class="event-item" id="event2" onclick="handleEventClick('event2')">
+    <div class="image" style="background-image: url('img/n17.jpg');"></div>
+    <div class="content">
+        <div class="text">Подпешитесь на ютуб</div>
+        <div class="details">
+            <div class="coin-icon"></div>
+            <div class="amount">200</div>
+        </div>
+    </div>
+    <div class="action-icon"></div>
+</div>
+
+       <div class="event-item" id="event2" onclick="handleEventClick('event2')">
+    <div class="image" style="background-image: url('img/n17.jpg');"></div>
+    <div class="content">
+        <div class="text">Нацдите нас в твитер</div>
+        <div class="details">
+            <div class="coin-icon"></div>
+            <div class="amount">200</div>
+        </div>
+    </div>
+    <div class="action-icon"></div>
+</div>
+
+     <div class="event-item" id="event2" onclick="handleEventClick('event2')">
+    <div class="image" style="background-image: url('img/n17.jpg');"></div>
+    <div class="content">
+        <div class="text">Посетите наш телеграм</div>
+        <div class="details">
+            <div class="coin-icon"></div>
+            <div class="amount">200</div>
+        </div>
+    </div>
+    <div class="action-icon"></div>
+</div>
+
+    <div class="event-item" id="event2" onclick="handleEventClick('event2')">
+    <div class="image" style="background-image: url('img/n17.jpg');"></div>
+    <div class="content">
+        <div class="text">Пригластье 3 друга</div>
+        <div class="details">
+            <div class="coin-icon"></div>
+            <div class="amount">200</div>
+        </div>
+    </div>
+    <div class="action-icon"></div>
+</div>
+
+           <div class="special-item">
+            <div class="image"></div>
+            <div class="text">Хочешь,чтоб я ускорился? Выполни задания!</div>
+        </div>
+            
+      <div class="event-item" id="event2" onclick="handleEventClick('event2')">
+    <div class="image" style="background-image: url('img/n17.jpg');"></div>
+    <div class="content">
+        <div class="text">Подпешитесь на фейсбук</div>
+        <div class="details">
+            <div class="coin-icon"></div>
+            <div class="amount">200</div>
+        </div>
+    </div>
+    <div class="action-icon"></div>
+</div>
+
+
+      <div class="event-item" id="event2" onclick="handleEventClick('event2')">
+    <div class="image" style="background-image: url('img/n17.jpg');"></div>
+    <div class="content">
+        <div class="text">Подпешитесь на ютуб</div>
+        <div class="details">
+            <div class="coin-icon"></div>
+            <div class="amount">200</div>
+        </div>
+    </div>
+    <div class="action-icon"></div>
+</div>
+
+    <div class="event-item" id="event2" onclick="handleEventClick('event2')">
+    <div class="image" style="background-image: url('img/n17.jpg');"></div>
+    <div class="content">
+        <div class="text">Нацдите нас в твитер</div>
+        <div class="details">
+            <div class="coin-icon"></div>
+            <div class="amount">200</div>
+        </div>
+    </div>
+    <div class="action-icon"></div>
+</div>
+
+<div class="event-item" id="event2" onclick="handleEventClick('event2')">
+    <div class="image" style="background-image: url('img/n17.jpg');"></div>
+    <div class="content">
+        <div class="text">Посетите наш телеграм</div>
+        <div class="details">
+            <div class="coin-icon"></div>
+            <div class="amount">200</div>
+        </div>
+    </div>
+    <div class="action-icon"></div>
+</div>
+
+  <div class="event-item" id="event2" onclick="handleEventClick('event2')">
+    <div class="image" style="background-image: url('img/n17.jpg');"></div>
+    <div class="content">
+        <div class="text">Пригластье 3 друга</div>
+        <div class="details">
+            <div class="coin-icon"></div>
+            <div class="amount">200</div>
+        </div>
+    </div>
+    <div class="action-icon"></div>
+</div>
+
+         </div>
+<div class="claim"></div>
+
+</div>
+    
+    <footer></footer>
+      
+    <script src="script03.js"></script>
+</body>
+</html>

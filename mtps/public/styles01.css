@@ -1,0 +1,362 @@
+body {
+    max-width: 600px;
+    max-height: 900px;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #423922e6;
+    background-size: cover;
+    background-position: center;
+}
+
+html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) and (max-height: 900px) {
+    body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+    position: relative;
+}
+
+header .user-info {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+header .user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: gray;
+    margin-right: 10px;
+}
+
+.container {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#apli01 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #332e2e;
+    margin-bottom: 10px;
+    flex-shrink: 0;
+    padding: 5px;
+    border: 2px solid #d95102e6;
+    border-radius: 20px;
+}
+
+#apli01 table {
+    width: 100%;
+    color: white;
+    table-layout: fixed;
+}
+
+#apli01 table img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+#apli01 table td {
+    padding: 0;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#apli03 {
+    height: 80px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 5px;
+}
+
+#apli03 .button {
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #33312a;
+    border-radius: 10px;
+    margin: 0 5px;
+}
+
+#apli02 {
+    flex: 1;
+    background-color: transparent;
+    overflow: hidden;
+    position: relative;
+    padding: 5px;
+    display: flex;
+    flex-direction: column; /* Выстраиваем контейнеры вертикально */
+    gap: 10px; /* Добавляем расстояние между контейнерами */
+}
+
+.gama {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%; /* Делаем контейнеры одинаковой высоты */
+    width: 100% ;   
+    position: relative;
+}
+
+.raf-center {
+    width: 250px;
+    height: 230px;
+    height: 30vh;
+    width: 40vh;
+    border: 2px solid #d95102e6;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #453c3c;
+    position: absolute;
+    left: 10px; /* Отступ от левого края */
+}
+
+.raf-table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.raf-table td {
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    
+    border-radius: 50%;
+    margin: auto;
+    background-size: cover; /* Поддержка изображения */
+    background-position: center; /* Центрирование изображения */
+}
+
+.counter01, .counter02 {
+    font-size: 16px;
+    color: #fff;
+}
+
+.raf {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.raf-circle {
+    width: 80px;
+    height: 80px;
+    height: 16vh;
+    width: 16vh;
+    border-radius: 50%;
+}
+
+
+
+#raf02 {
+    top: 20px;
+    right: 20px; /* Отступ от правого края */
+}
+
+#raf04 {
+    bottom: 20px;
+    right: 20px; /* Отступ от правого края */
+}
+
+
+
+.voh {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+}
+
+.voh-circle {
+    width: 220px;
+    height: 220px;
+    height: 40vh;
+    width: 40vh;
+    
+    border-radius: 50%;
+    left: 200px; /* Отступ от левого края */
+}
+
+.voh-rect {
+    width: 80px;
+    height: 240px;
+    height: 36vh;
+    width: 16vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.voh-rect div {
+    flex: 1;
+    border: 2px solid #33312a;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Для абсолютного позиционирования внутренних объектов */
+}
+
+.inner-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    position: absolute; /* Абсолютное позиционирование */
+    top: 50%; /* Центрирование по вертикали */
+    left: 50%; /* Центрирование по горизонтали */
+    transform: translate(-50%, -50%); /* Смещение для точного центрирования */
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #875723;
+    color: white;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse-border {
+    0% {
+        border-color: red;
+    }
+    50% {
+        border-color: yellow;
+    }
+    100% {
+        border-color: red;
+    }
+}
+
+.record-spin {
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    100% {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.modal-content {
+    background-color: #786d6d;
+    margin: auto;
+    padding: 20px;
+    border: 3px solid #d95102e6;
+    border-radius: 10px;
+    width: 150px; /* Ширина модального окна */
+    height: 80px; /* Высота модального окна */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Центрирование контента */
+}
+
+.modal-button {
+    width: 100px;
+    height: 40px;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 10px; /* Отступ вокруг кнопки */
+    background-color: #d95102e6;
+}
+
+.modal-text {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 5px; /* Отступ снизу для разделения с кнопками */
+    display: flex;
+    align-items: center; /* Вертикальное выравнивание по центру */
+    justify-content: center; /* Горизонтальное выравнивание по центру */
+}
+
+.modal-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px; /* Отступ справа от иконки */
+    vertical-align: middle; /* Вертикальное выравнивание */
+}

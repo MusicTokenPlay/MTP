@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Layout</title>
+    <link rel="stylesheet" href="styles01.css">
+</head>
+<body>
+    <header>
+        <div class="user-info">
+            <img id="user-avatar" src="default-avatar.png" alt="User Avatar">
+            <span id="user-name">User Name</span>
+        </div>
+    </header>
+    <div class="container" id="apli01">
+         <table>
+            <tr>
+                <td><img src="img/n1.png" alt="Diom Icon"><span id="diom-counter">0</span></td>
+                <td><img src="img/n4.png" alt="Coin Icon"><span id="coin-counter">0</span></td>
+            </tr>
+        </table>
+    </div>
+    <div class="container" id="apli02">
+        <div class="gama" id="gama1">
+            <div class="raf raf-circle pulse" id="raf02" style="background-image: url('img/r1.png');"></div>
+            <div class="raf-center">
+                <table class="raf-table">
+                    <tr>
+                        <td><div class="circle" style="background-image: url('img/n4.png');"></div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="counter01">0</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="circle" style="background-image: url('img/n1.png');"></div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="counter02">0</div></td>
+                    </tr>
+                </table>
+            </div>
+
+          <div class="raf raf-circle pulse" id="raf04" style="background-image: url('img/r1.png');"></div>
+
+           
+        </div>
+        <div class="gama" id="gama2">
+            <div class="voh voh-circle record-spin" id="voh03" style="background-image: url('img/blaz2.png');"></div>
+
+            <div class="voh voh-rect" id="voh02" style="top: 10px; right: 20px;">
+                <div id="tap3" onclick="handleClick('tap3')" style="background-image: url('img/n16.png');">
+                    <div class="inner-circle" style="background-image: url('img/n4.png');"></div>
+                </div>
+                <div id="tap1" onclick="handleClick('tap1')" style="background-image: url('img/n16.png');">
+                    <div class="inner-circle" style="background-image: url('img/n1.png');"></div>
+                </div>
+                 <div id="tap2" onclick="handleClick('tap2')" style="background-image: url('img/n16.png');">
+                    <div class="inner-circle" style="background-image: url('img/n3.png');"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal" class="modal" onclick="closeModal(event)" style="display:none;">
+        <div class="modal-content" onclick="event.stopPropagation();">
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <div id="tap1-content" style="display:none;">
+        <div class="modal-text">
+            <img src="img/n1.png" class="modal-icon" alt="Icon 1">
+            <span id="stap1">10</span>
+        </div>
+        <button id="bliz1-button" class="modal-button" onclick="handleBliz1Click()">Bliz 1</button>
+        <div id="error-message-1" style="color: red; display: none;">Нет средств</div>
+    </div>
+
+    <div id="tap3-content" style="display:none;">
+        <div class="modal-text">
+            <img src="img/n4.png" class="modal-icon" alt="Icon 1">
+            <span id="stap3">1000</span>
+        </div>
+        <button id="bliz3-button" class="modal-button" onclick="handleBliz3Click()">Bliz 3</button>
+        <div id="error-message-3" style="color: red; display: none;">Нет средств</div>
+    </div>
+
+    <div id="tap2-content" style="display:none;">
+        <div class="modal-text">
+            <img src="img/n3.png" class="modal-icon" alt="Icon 2">
+            <span id="stap2">10000</span>
+        </div>
+        <button id="bliz2-button" class="modal-button" onclick="handleBliz2Click()">Bliz 2</button>
+        <div id="error-message-2" style="color: red; display: none;">Нет средств</div>
+    </div>
+   <div id="tapSt-content" style="display:none;">
+    <div class="modal-text">
+        
+        <img src="img/n4.png" class="modal-icon" alt="Icon 4">
+        <span id="st1">0</span>
+        <img src="img/n1.png" class="modal-icon" alt="Icon 4">
+        <span id="st2">0</span>
+    </div>
+</div>
+    <footer></footer>
+    <script src="script01.js"></script>
+</body>
+</html>
